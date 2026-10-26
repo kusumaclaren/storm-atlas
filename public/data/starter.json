@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0-provisional",
+  "updatedAt": "2026-10-26",
+  "region": "reference",
+  "notes": "16 entri awal untuk validasi produk, bukan katalog lengkap atau meta terkini. Ringkasan kit dan koefisien kualitatif belum ditinjau menyeluruh. Tidak ada scraping massal. Region dan patch spesifik, Euphoria, Portray, Resonance, serta simulasi rotasi belum didukung.",
+  "characters": [
+    {
+      "id": "tuesday",
+      "name": "Tuesday",
+      "rarity": 6,
+      "afflatus": "Spirit",
+      "role": "Support",
+      "tags": [
+        "poison"
+      ],
+      "supports": [
+        "poison",
+        "crit"
+      ],
+      "offense": 0.35,
+      "sustain": 0,
+      "actionDemand": 0.35,
+      "description": "Mendukung tim Poison melalui Array dan interaksi debuff.",
+      "weakness": "Nilai dukungan turun pada tim non-Poison.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/tuesday",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/tuesday.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "tooth-fairy",
+      "name": "Tooth Fairy",
+      "rarity": 6,
+      "afflatus": "Star",
+      "role": "Healer",
+      "tags": [
+        "mental"
+      ],
+      "supports": [
+        "crit"
+      ],
+      "offense": 0.1,
+      "sustain": 0.85,
+      "actionDemand": 0.25,
+      "description": "Kit dasar menggabungkan healing dan debuff terkait critical.",
+      "weakness": "Cleanse bersyarat; Euphoria belum dimodelkan.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/tooth-fairy",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/tooth-fairy.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "jessica",
+      "name": "Jessica",
+      "rarity": 6,
+      "afflatus": "Plant",
+      "role": "DPS",
+      "tags": [
+        "poison",
+        "reality"
+      ],
+      "supports": [],
+      "offense": 0.95,
+      "sustain": 0,
+      "actionDemand": 0.65,
+      "description": "Carry dengan mekanisme yang berinteraksi dengan Poison.",
+      "weakness": "Membutuhkan aplikasi Poison yang konsisten.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/jessica",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/jessica.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 3
+    },
+    {
+      "id": "sotheby",
+      "name": "Sotheby",
+      "rarity": 6,
+      "afflatus": "Plant",
+      "role": "Healer",
+      "tags": [
+        "poison"
+      ],
+      "supports": [
+        "poison"
+      ],
+      "offense": 0.15,
+      "sustain": 0.7,
+      "actionDemand": 0.4,
+      "description": "Healing bertahap dan aplikasi Poison pada kit dasar.",
+      "weakness": "Healing memerlukan setup; Euphoria belum dimodelkan.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/sotheby",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/sotheby.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "lilya",
+      "name": "Lilya",
+      "rarity": 6,
+      "afflatus": "Star",
+      "role": "DPS",
+      "tags": [
+        "crit",
+        "reality",
+        "followup"
+      ],
+      "supports": [],
+      "offense": 0.9,
+      "sustain": 0,
+      "actionDemand": 0.7,
+      "description": "Carry Reality dengan mekanisme critical dan serangan lanjutan.",
+      "weakness": "Membutuhkan dukungan critical; kit dasar saja.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/lilya",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/lilya.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "regulus",
+      "name": "Regulus",
+      "rarity": 6,
+      "afflatus": "Star",
+      "role": "Sub-DPS",
+      "tags": [
+        "crit",
+        "mental"
+      ],
+      "supports": [],
+      "offense": 0.65,
+      "sustain": 0.15,
+      "actionDemand": 0.3,
+      "description": "Damage Mental dan gaya bermain dengan giliran setup.",
+      "weakness": "Nilai defensif bersyarat dan belum disimulasikan.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/regulus",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/regulus.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "sonetto",
+      "name": "Sonetto",
+      "rarity": 5,
+      "afflatus": "Mineral",
+      "role": "Support",
+      "tags": [
+        "reality"
+      ],
+      "supports": [
+        "reality",
+        "mental"
+      ],
+      "offense": 0.25,
+      "sustain": 0.15,
+      "actionDemand": 0.35,
+      "description": "Support generalis dengan buff dan control.",
+      "weakness": "Control tidak selalu berlaku pada boss.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/sonetto",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/sonetto.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "bkornblume",
+      "name": "Bkornblume",
+      "rarity": 5,
+      "afflatus": "Plant",
+      "role": "Support",
+      "tags": [
+        "reality"
+      ],
+      "supports": [
+        "reality"
+      ],
+      "offense": 0.5,
+      "sustain": 0,
+      "actionDemand": 0.35,
+      "description": "Debuffer yang mendukung damage Reality.",
+      "weakness": "Tidak memberikan healing.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/bkornblume",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/bkornblume.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "centurion",
+      "name": "Centurion",
+      "rarity": 6,
+      "afflatus": "Beast",
+      "role": "DPS",
+      "tags": [
+        "reality",
+        "ultimate"
+      ],
+      "supports": [],
+      "offense": 0.9,
+      "sustain": 0.1,
+      "actionDemand": 0.65,
+      "description": "Carry Reality yang berinteraksi dengan Moxie.",
+      "weakness": "Pengelolaan Moxie memengaruhi performa.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/centurion",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/centurion.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "melania",
+      "name": "Melania",
+      "rarity": 6,
+      "afflatus": "Beast",
+      "role": "DPS",
+      "tags": [
+        "mental",
+        "ultimate"
+      ],
+      "supports": [],
+      "offense": 0.95,
+      "sustain": 0,
+      "actionDemand": 0.75,
+      "description": "Carry Mental yang berfokus pada Ultimate berulang.",
+      "weakness": "Membutuhkan aksi dan waktu untuk setup.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/melania",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/melania.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "medicine-pocket",
+      "name": "Medicine Pocket",
+      "rarity": 6,
+      "afflatus": "Beast",
+      "role": "Healer",
+      "tags": [
+        "mental"
+      ],
+      "supports": [
+        "reality",
+        "mental"
+      ],
+      "offense": 0.1,
+      "sustain": 0.9,
+      "actionDemand": 0.4,
+      "description": "Sustain generalis dengan healing dan dukungan defensif.",
+      "weakness": "Kontribusi damage personal rendah.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/medicine-pocket",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/medicine-pocket.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "balloon-party",
+      "name": "Balloon Party",
+      "rarity": 5,
+      "afflatus": "Mineral",
+      "role": "Healer",
+      "tags": [
+        "reality"
+      ],
+      "supports": [],
+      "offense": 0.1,
+      "sustain": 0.8,
+      "actionDemand": 0.3,
+      "description": "Healer dengan pemulihan berbasis kondisi HP.",
+      "weakness": "Nilai counter dan healing bergantung keadaan tim.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/balloon-party",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/balloon-party.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "an-an-lee",
+      "name": "An-an Lee",
+      "rarity": 6,
+      "afflatus": "Plant",
+      "role": "Support",
+      "tags": [
+        "reality"
+      ],
+      "supports": [
+        "reality",
+        "mental"
+      ],
+      "offense": 0.35,
+      "sustain": 0.15,
+      "actionDemand": 0.35,
+      "description": "Support generalis dengan buff dan pengelolaan incantation.",
+      "weakness": "Pergantian state belum disimulasikan.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/an-an-lee",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/an-an-lee.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "dikke",
+      "name": "Dikke",
+      "rarity": 5,
+      "afflatus": "Beast",
+      "role": "Healer",
+      "tags": [
+        "mental",
+        "ultimate"
+      ],
+      "supports": [],
+      "offense": 0.45,
+      "sustain": 0.55,
+      "actionDemand": 0.5,
+      "description": "Pilihan hybrid damage Mental dan healing.",
+      "weakness": "Sustain lebih terbatas dalam preset pertarungan panjang.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/dikke",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/dikke.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "eternity",
+      "name": "Eternity",
+      "rarity": 6,
+      "afflatus": "Mineral",
+      "role": "DPS",
+      "tags": [
+        "reality",
+        "ultimate"
+      ],
+      "supports": [],
+      "offense": 0.85,
+      "sustain": 0.25,
+      "actionDemand": 0.65,
+      "description": "Carry Reality dengan kebutuhan HP dan kemampuan bertahan personal.",
+      "weakness": "Sustain pribadi tidak setara dengan healing seluruh tim.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/eternity",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/eternity.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    },
+    {
+      "id": "charlie",
+      "name": "Charlie",
+      "rarity": 5,
+      "afflatus": "Star",
+      "role": "DPS",
+      "tags": [
+        "mental"
+      ],
+      "supports": [],
+      "offense": 0.85,
+      "sustain": 0,
+      "actionDemand": 0.65,
+      "description": "Carry Mental dengan kondisi buff dan HP.",
+      "weakness": "Kondisi HP dan Portray belum dimodelkan.",
+      "sourceUrl": "https://www.prydwen.gg/re1999/characters/charlie",
+      "status": "provisional",
+      "verifiedAt": null,
+      "image": "/art/charlie.svg",
+      "imageCredit": "Simbol orisinal Storm Atlas; bukan portrait resmi.",
+      "minInsight": 1
+    }
+  ]
+}

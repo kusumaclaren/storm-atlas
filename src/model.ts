@@ -1,0 +1,11 @@
+import { z } from 'zod';
+export const tags=['poison','crit','reality','mental','burn','followup','ultimate'] as const;
+const unit=z.number().min(0).max(1);
+export const CharacterSchema=z.object({id:z.string().regex(/^[a-z0-9-]+$/),name:z.string().min(1).max(70),rarity:z.number().int().min(2).max(6),afflatus:z.enum(['Star','Plant','Mineral','Beast','Spirit','Intellect']),role:z.enum(['DPS','Sub-DPS','Support','Healer','Sustain']),tags:z.array(z.enum(tags)),supports:z.array(z.enum(tags)),offense:unit,sustain:unit,actionDemand:unit,description:z.string().max(500),weakness:z.string().max(500),sourceUrl:z.string().url().refine(v=>v.startsWith("https://"),"Sumber harus menggunakan HTTPS"),status:z.enum(['provisional','verified']),verifiedAt:z.string().nullable(),image:z.string().max(500),imageCredit:z.string().max(300),minInsight:z.number().int().min(0).max(3)});
+export const DatasetSchema=z.object({schemaVersion:z.literal(1),version:z.string(),updatedAt:z.string(),region:z.literal('reference'),notes:z.string(),characters:z.array(CharacterSchema).min(3).max(200)}).superRefine((d,ctx)=>{if(new Set(d.characters.map(c=>c.id)).size!==d.characters.length)ctx.addIssue({code:'custom',message:'ID karakter harus unik'});for(const c of d.characters){if(!c.image.startsWith('/art/')&&!/^https:\/\//.test(c.image))ctx.addIssue({code:'custom',message:'Gambar harus aset lokal /art/ atau HTTPS'});if(c.status==='verified'&&!c.verifiedAt)ctx.addIssue({code:'custom',message:'Tanggal verifikasi wajib'});}});
+export type Character=z.infer<typeof CharacterSchema>;
+export type Dataset=z.infer<typeof DatasetSchema>;
+export type Investment={insight:number;portray:number;euphoria:boolean};
+export type Collection=Record<string,Investment>;
+export type Options={size:3|4;lock:string;mode:'general'|'boss'|'waves';enemy:string;immunePoison:boolean};
+export type Result={members:Character[];score:number;parts:number[];reasons:string[];warnings:string[]};
